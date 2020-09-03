@@ -1,0 +1,221 @@
+@charset 'utf-8';
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 1vw;
+    height: 1vh;
+    main{
+        width: 1349px;
+        height: 690px;
+        // 头部
+        header{
+            .header{
+                width: 1130px;
+                height: 78px;
+                margin: 0 auto;
+                padding-top: 20px;
+            
+            }
+        }
+        // 中间
+        article{
+            width: 1349px;
+            height: 588px;
+            background: url(../images/lunbo/zhucelb.jpg) no-repeat center center;
+            position: relative;
+            .regbox{
+                width: 410px;
+                height: 560px;
+                background: rgb(255, 255, 255);
+                position: absolute;
+                top: 28px;
+                right: 105px;
+                .tabs{
+                    width: 410px;
+                    height: 33px;
+                    padding: 27px 0 24px;
+                    text-align: center;
+                    font-size: 24px;
+                    color: #666;
+                    a{
+                        text-decoration: none;
+                        color: #666;
+                        &:first-child{
+                            color: #ff6700;
+                        }
+                        span{
+                            color: rgb(214, 214, 214);
+                        }
+                    }
+                    .active{
+                        color: #ff6700;
+                    }
+                }
+                .tabs_content{
+                    width: 348px;
+                    height: 476px;
+                    margin: 0 31px;
+                    .login_area{
+                        width: 348px;
+                        height: 114px;
+                        // 用户名密码登录
+                        .one{
+                            background: #fff;
+                            position: absolute;
+                            #phone{
+                                width: 316px;
+                                height: 22px;
+                                border: 1px solid #e8e8e8;
+                                outline: none;
+                                padding: 13px 16px 13px 14px;
+                                color: #4a4a4a;
+                                margin-bottom: 15px;
+                                &:focus{
+                                    border: 1px solid #ff6700;
+                                }
+                            }
+                            #password{
+                                width: 316px;
+                                height: 22px;
+                                border: 1px solid #e8e8e8;
+                                outline: none;
+                                padding: 13px 16px 13px 14px;
+                                color: #4a4a4a;
+                                margin-bottom: 15px;
+                                &:focus{
+                                    border: 1px solid #ff6700;
+                                }
+                            }
+                            #btn{
+                                width: 348px;
+                                height: 50px;
+                                outline: none;
+                                border: none;
+                                background: #ff6700;
+                                color: #fff;
+                                cursor: pointer;
+                                margin-bottom: 20px;
+                            }
+                        }
+                        
+                    }                    
+                    .other{
+                        position: absolute;
+                        top: 288px;
+                        width: 348px;
+                        height: 273px;
+                        background: rgb(255, 255, 255);
+                        .login_way{
+                            width: 348px;
+                            height: 20px;
+                            margin-bottom: 30px;
+                            background: #fff;
+                            .one{
+                                width: 348px;
+                                text-align: center;
+                                margin-bottom: 30px;
+                                a{
+                                    color: #ff6700;
+                                    font-size: 14px;
+                                    text-decoration: none;
+                                    text-align: center;
+                                    line-height: 20px;
+                                }
+                            }
+                            .two{
+                                text-align: center;
+                                margin-bottom: 30px;
+                                a{
+                                    color: #ff6700;
+                                    font-size: 14px;
+                                    text-decoration: none;
+                                    text-align: center;
+                                    line-height: 20px;
+                                }
+                                span{
+                                    color: #999;
+                                }
+                            }
+                        }
+                        .remember{
+                            width: 348px;
+                            height: 20px;
+                            font-size: 14px;
+                            text-align: center;
+                            a{
+                                color: #999;
+                                text-decoration: none;
+                            }
+                        }
+                        .other_way{
+                            padding-top: 143px;
+                            fieldset{
+                                border: none;
+                                border-top: 1px solid #bbb;
+                                text-align: center;
+                                color: #bbb;
+                                font-size: 14px;
+                            }
+                            div{
+                                width: 308px;
+                                height: 33px;
+                                padding: 10px 40px 0;
+                                a{
+                                    margin: 0 17px;
+                                    width: 30px;
+                                    height: 30px;
+                                    text-align: center;
+                                    display: inline-block;
+                                    border-radius: 50%;
+                                    text-decoration: none;
+                                    span{
+                                        font-size: 30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    footer{
+        width: 1349px;
+        height: 80px;
+        margin-top: 80px;
+        // position: absolute;
+        // bottom: 0;
+        color: #9d9d9d;
+        font-size: 14px;
+        .language{
+            text-align: center;
+            a{
+                text-decoration: none;
+                color: #757575;
+                &:hover{
+                    color: #474747;
+                    cursor: pointer;
+                }
+            }
+        }
+        .police{
+            text-align: center;
+            padding: 10px;
+            span{
+                color: #757575;
+                text-decoration: none;
+            }
+            a{
+                text-decoration: none;
+                color: #9d9d9d;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        小米账号 - 注册
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/registration-page.css">
+    <style>
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+    <script src="../css/font_niane0frq1n/iconfont.js"></script>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="main">
+            <div class="tb">
+                <span>
+                    <svg class="icon" aria-hidden="true" style="font-size: 50px; " >
+                    <use xlink:href="#icon-xiaomi"  ></use>
+                    </svg>
+                </span>
+            </div>
+            <div class="main-p">
+                <p>注册小米账号</p>
+            </div>
+            <div class="message">
+                <p>国家/地区</p>
+                <div class="select">
+                    &nbsp;中国
+                </div>
+                <p>成功注册账号后，国家/地区将不能被修改 </p>
+                <p>手机号码</p>
+                <div class="phone">
+                    <div class="phone-tb">
+                        <span>+86</span>
+                    </div>
+                    <input type="text" id="phone" placeholder="请输入手机号">
+                </div>
+                <div id="kong"></div>
+                <input type="button" id="btn" value="立即注册">
+            </div>
+            <div class="yuedu">
+                <p>
+                    已阅读并同意：小米 <a href="" class="">用户协议</a>和<a href="" class=""> 隐私政策 </a>
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="footer">
+            <div class="footer-1">
+                <li><a>简体</a></li>
+                <li><a>繁体</a></li>
+                <li><a>English</a></li>
+                <li><a>常见问题</a></li>
+
+            </div>
+            <br>
+            <div class="footer-2">
+                <p>小米公司版权所有-京ICP备10046444-京公网安备11010802020134号-京ICP证110507号</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script>
+    var phone = document.getElementById('phone');
+    var kong = document.getElementById('kong');
+    var btn = document.getElementById('btn');
+
+    var reg = /^1[3-9]\d{9}$/;
+    phone.onblur = function() {
+        if (this.value == '') {
+            kong.innerHTML = "手机号不能为空！";
+        } else if (reg.test(phone.value)) {
+            kong.innerHTML = "";
+            phone.attr('data-pass', true)
+        } else {
+            kong.innerHTML = "手机号格式错误，请重新输入！";
+        }
+    }
+</script>
+
+</html>

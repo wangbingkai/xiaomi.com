@@ -1,0 +1,119 @@
+@charset "utf-8";
+* {
+  margin: 0px;
+  padding: 0px;
+}
+#wrap {
+  width: 1349px;
+  height: 638px;
+  background-color: #F9F9F9;
+}
+#wrap .main {
+  width: 834px;
+  height: 560px;
+  background-color: white;
+  margin: 0px auto;
+}
+#wrap .main .tb {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+#wrap .main .main-p {
+  margin: 30px auto;
+  text-align: center;
+  color: #333333;
+  font-size: 30px;
+}
+#wrap .main .message {
+  width: 332px;
+  height: 308px;
+  margin: 0px auto;
+  color: #595959;
+}
+#wrap .main .message p {
+  margin: 6px  0px;
+  font-size: 14px;
+}
+#wrap .main .message p:nth-child(4) {
+  margin-top: 20px;
+}
+#wrap .main .message .select {
+  width: 332px;
+  height: 41px;
+  border: 1px solid #cccccc;
+  line-height: 41px;
+}
+#wrap .main .message .phone {
+  width: 332px;
+  height: 41px;
+  border: 1px solid #cccccc;
+  line-height: 41px;
+}
+#wrap .main .message .phone .phone-tb {
+  width: 70px;
+  height: 41px;
+  border-right: solid 1px #cccccc;
+  float: left;
+}
+#wrap .main .message .phone input {
+  float: right;
+  margin-top: 14px;
+  width: 254px;
+  outline-style: none;
+  border: none;
+}
+#wrap .main .message #kong {
+  width: 332px;
+  height: 41px;
+  color: red;
+  font-size: 8px;
+}
+#wrap .main .message #btn {
+  width: 332px;
+  height: 41px;
+  background-color: #FF6700;
+  color: white;
+}
+#wrap .main .yuedu {
+  margin: 0px auto;
+  width: 332px;
+  height: 41px;
+  line-height: 40px;
+  text-align: center;
+}
+#wrap .main .yuedu p {
+  font-size: 14px;
+}
+#wrap .footer {
+  width: 100%;
+  height: 70px;
+  text-align: center;
+}
+#wrap .footer .footer-1 {
+  display: inline-block;
+  width: 260px;
+  margin: 0px auto;
+  height: 20px;
+  list-style: none;
+}
+#wrap .footer .footer-1 li {
+  float: left;
+  padding: 2px 12px;
+  border-right: 1px solid #cccccc;
+  font-size: 14px;
+}
+#wrap .footer .footer-1 li:nth-child(4) {
+  border-right: none;
+}
+#wrap .footer .footer-2 {
+  width: 854px;
+  margin: 0px auto;
+  display: inline-block;
+}
+#wrap .footer .footer-2 p {
+  font-size: 12px;
+  width: 854px;
+  height: 22px;
+  line-height: 22px;
+}
